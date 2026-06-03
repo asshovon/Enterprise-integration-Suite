@@ -82,10 +82,10 @@ export default function App() {
         {/* Footer Info bar */}
         <footer className="h-12 bg-slate-100 border-t border-slate-200 flex items-center px-8 justify-between shrink-0 text-xs text-slate-500 font-sans">
           <div className="flex items-center gap-6 text-[10px] text-slate-500 font-bold uppercase font-mono tracking-wider">
-            <span>System v2.4.1</span>
+            <span>ASP.NET Core v9.0</span>
             <span className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              Environment API: Online
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              C# Backend: Online
             </span>
             <span className="hidden md:inline text-slate-400">Power Automate Flow: [Active]</span>
           </div>

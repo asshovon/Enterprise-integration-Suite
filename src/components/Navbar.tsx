@@ -1,5 +1,5 @@
 import React from 'react';
-import { Database, UserCheck, Layers, CloudLightning, HelpCircle, Terminal } from "lucide-react";
+import { Database, UserCheck, Layers, CloudLightning, HelpCircle, Terminal, Cpu } from "lucide-react";
 
 interface NavbarProps {
   activeTab: 'inventories' | 'salesforce' | 'odoo' | 'tickets';
@@ -12,14 +12,14 @@ export default function Navbar({ activeTab, setActiveTab, openTicketModal }: Nav
     <aside className="w-64 bg-slate-950 text-slate-400 flex flex-col shrink-0 border-r border-slate-900 min-h-screen" id="main-nav">
       {/* Brand area */}
       <div className="p-6">
-        <div className="flex items-center gap-3 text-white mb-8">
-          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold text-white select-none shadow-md">
-            E
+        <div className="flex items-center gap-3 text-white mb-8 font-sans">
+          <div className="w-9 h-9 bg-purple-700 rounded-lg flex items-center justify-center font-mono font-black text-white select-none shadow-md border border-purple-600">
+            C#
           </div>
           <div className="flex flex-col">
             <span className="font-extrabold tracking-tight text-md text-white">AppIntegrate Pro</span>
-            <span className="text-[9px] uppercase font-mono mt-0.5 text-blue-400 font-black tracking-widest leading-none">
-              Enterprise Hub
+            <span className="text-[9px] uppercase font-mono mt-0.5 text-purple-400 font-black tracking-widest leading-none">
+              .NET Enterprise API
             </span>
           </div>
         </div>

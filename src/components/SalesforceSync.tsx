@@ -127,7 +127,7 @@ export default function SalesforceSync() {
             <div className="flex justify-between items-center text-zinc-600">
               <span>Workspace URL:</span>
               <span className="font-mono text-[11px] text-zinc-900 select-all border-b border-zinc-150">
-                https://ais-dev-... run.app
+                {typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000'}
               </span>
             </div>
             <div className="flex justify-between items-center text-zinc-600">

@@ -516,7 +516,7 @@ app.post("/api/tickets/submit", async (req, res) => {
   const fileContent = JSON.stringify({
     "Reported by": reportedBy || "asshovon15@gmail.com",
     "Inventory": inventoryTitle || "N/A",
-    "Link": link || `https://ais-dev-mipjftu65lj6d27koip36d-816132878936.asia-southeast1.run.app/#/inventory/active`,
+    "Link": link || `http://localhost:3000/#/inventory/active`,
     "Priority": priority || "Average",
     "Summary": summary,
     "Requested Admins": adminEmails || ["asshovon15@gmail.com"],
@@ -526,7 +526,7 @@ app.post("/api/tickets/submit", async (req, res) => {
   logs.push(`[${new Date().toISOString()}] JSON Payload structured successfully (Filename: ${fileName}).`);
 
   let targetStatus: 'uploaded' | 'failed' = 'uploaded';
-  let uploadedFileUrl = `https://onedrive.live.com/download?id=${ticketId}&cid=AIS_STUDIO_STORAGE`;
+  let uploadedFileUrl = `https://onedrive.live.com/download?id=${ticketId}&cid=LOCAL_STORAGE_ID`;
 
   // Actually submit to Webhook if provided (Real integration!)
   if (webhookUrl && webhookUrl.trim().startsWith("http")) {
@@ -577,7 +577,7 @@ app.post("/api/tickets/submit", async (req, res) => {
     priority: priority || 'Average',
     reportedBy: reportedBy || 'asshovon15@gmail.com',
     inventoryTitle: inventoryTitle || 'N/A',
-    link: link || 'https://ais-dev-mipjftu65lj6d27koip36d-816132878936.asia-southeast1.run.app/#/inventory/active',
+    link: link || 'http://localhost:3000/#/inventory/active',
     adminEmails: adminEmails || ['asshovon15@gmail.com'],
     webhookUrl: webhookUrl || '',
     status: targetStatus,

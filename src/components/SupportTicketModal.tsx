@@ -23,7 +23,7 @@ export default function SupportTicketModal({ isOpen, onClose, activeInventoryTit
   const [notifDetails, setNotifDetails] = useState({ title: '', body: '' });
 
   // Update support contexts
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : 'https://ais-dev-mipjftu65lj6d27koip36d-816132878936.asia-southeast1.run.app/#/inventory';
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : 'http://localhost:3000/#/inventory';
 
   // Clear states on close/open
   useEffect(() => {
