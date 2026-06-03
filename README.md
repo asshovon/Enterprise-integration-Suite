@@ -1,6 +1,6 @@
-# Enterprise Integration Suite - Live Local Execution (No Node.js Required)
+# Enterprise Integration Suite - Live Local Execution
 
-এই প্রজেক্টটি কোনো AI বা Gemini API key ছাড়া সম্পূর্ণ অফলাইন এবং লোকাল মোডে তৈরি করা হয়েছে। 
+ সম্পূর্ণ অফলাইন এবং লোকাল মোডে তৈরি করা হয়েছে। 
 
 আপনি যদি **Node.js** বা কোনো টার্মিনাল কমান্ড ব্যবহার করতে না চান, তবে নিচের যেকোনো একটি নিয়মে খুব সহজেই **Google Chrome** ব্রাউজারে এটি সরাসরি ওপেন করতে পারবেন।
 
